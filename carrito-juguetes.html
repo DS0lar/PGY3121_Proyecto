@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetes</title>
+     <!-- Link hoja de estilo -->
+     <link rel="stylesheet" href="css/style-carro.css">
+     <link rel="stylesheet" href="css/style-product.css">
+  
+
+     <!-- Link a bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <!-- Link iconos bootstrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+ 
+</head>
+<header >
+
+  <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <div class="container">
+      <a href="#" >
+        <img src="img/inicio/log.png" >
+      </a>
+      <a href="#" class="navbar-brand">
+        <strong> LovPets</strong>
+      </a>
+      
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarHeader" aria-controls="navbarHeader"
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarHeader">
+        <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+
+          <li class="nav-item">
+              <a href="inicio.html" class="nav-link ">INICIO</a>
+          </li>
+         
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PRODUCTOS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item " href="prod-alimento.html">ALIMENTO</a></li>
+              <li><a class="dropdown-item" href="prod-juguetes.html">JUGUETES</a></li>
+              <li><a class="dropdown-item active" href="prod-accesorios.html">ACCESORIOS</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="prod-agregar.html">AGREGAR/MODIFICAR</a></li>
+              
+
+            </ul>
+          </li>
+
+          
+
+          
+
+          <li class="nav-item">
+            <a href="nosotros.html" class="nav-link ">NOSOTROS</a>
+          </li>
+           
+            <a href="login.html" class="nav-link ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle " viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </a>
+
+            <a href="#" class="nav-link " id="carrito">
+              
+              <i class="bi bi-cart2 " id="car"><span id="cantidadCarrito" class="cantidad-carrito"></span> </i>
+              
+           
+            </a>
+            <li>
+              <i class="bi bi-brightness-high-fill nav-item" id="toggleDark"></i>
+            </li>
+            
+
+            
+              
+            
+             
+  
+          </ul>
+  
+        
+        </div>
+      </div>
+    </div>
+      
+  </header>
+  
+
+<body>
+  <div id="ini" class="pb-3">
+    <a href="productos.html" class="pt-2 ps-2 fs-5 align-items-center col-sm" id="link-pr">PRODUCTOS ></a> <a href="#" class="fs-5 align-items-center col-sm " id="link-pr">JUGUETES</a></h3>
+  </div>
+ 
+  <div class="shop-content row row-cols-1 row-cols-sm-2 row-cols-md-3" id="shopContent"></div>
+
+  <!-- modal -->
+  <div id="modal-container" class="modal-container"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="d-flex justify-content-end bg-dark text-white p-3">
+    @LovPets 2023
+  </footer>
+<script src="js/product.js"></script>
+<script src="js/shop-juguetes.js"></script>
+<script src="js/carro-juguetes.js"></script>
+<script src="js/theme.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Link a bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <!-- Link iconos bootstrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+  <title>Inicio sesion</title>
+</head>
+<header >
+
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+      <div class="container">
+        <a href="#" >
+          <img src="img/inicio/log.png" >
+        </a>
+        <a href="#" class="navbar-brand">
+          <strong> LovPets</strong>
+        </a>
+        
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarHeader" aria-controls="navbarHeader"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"> </span>
+  
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarHeader">
+          <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+
+            <li class="nav-item">
+                <a href="inicio.html" class="nav-link  ">INICIO</a>
+            </li>
+           
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PRODUCTOS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item " href="carrito-comida.html">ALIMENTO</a></li>
+                <li><a class="dropdown-item" href="carrito-juguetes.html">JUGUETES</a></li>
+                <li><a class="dropdown-item" href="carrito-accesorios.html">ACCESORIOS</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="prod-agregar.html">AGREGAR/MODIFICAR</a></li>
+  
+              </ul>
+            </li>
+  
+            
+  
+            
+  
+            <li class="nav-item">
+              <a href="nosotros.html" class="nav-link ">NOSOTROS</a>
+            </li>
+  
+            <a href="carrito.html" class="nav-link ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart4" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+              </svg>
+            </a>
+            <a href="login.html" class="nav-link ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle " viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </a>
+            <li>
+              <i class="bi bi-brightness-high-fill nav-item" id="toggleDark"></i>
+            </li>
+            
+
+            
+              
+            
+             
+  
+          </ul>
+  
+        
+        </div>
+      </div>
+    </div>
+      
+  </header>
+<body>
+  <body class="bg-primary bg-opacity-25" >
+
+    <section class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto rounded shadow bg-white">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="m-5 text-center">
+                                <h1>Bienvendo</h1>  
+                            </div>
+                            <form class="m-5">
+                                <div class="mb-3">
+                                    <label for="username">Nombre</label>
+                                    <input class="form-control" type="text" id="username"> 
+                                </div>
+                                <div class="mb-3">
+                                  <label for="contrasena">Contraseña</label>
+                                  <input class="form-control" type="password" id="password"> 
+                              </div>
+                              <div class="row mb-3">
+                                  <div class="col-6">
+                                      <div class="form-check">
+                                          <input type="checkbox" id="remember-me">
+                                          <label for="remember-me">Guardar Contraseña</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="text-end">
+                                        <a href="#">¿Olvide mi Contraseña?</a>
+                                      </div>
+                                  </div>
+
+                                  <div>
+                                      <input type="submit" class="form-control btn btn-primary mt-3">
+                                </div>
+                              </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <img src="./img/login/login_img.png" alt="login" class="img-fluid p-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+         </div>
+    </section>
+    <footer class="d-flex justify-content-end bg-dark text-white p-3">
+        @LovPets 2023
+      </footer>
+
+    <script src="js/theme.js"></script>
+</body>
+</html>

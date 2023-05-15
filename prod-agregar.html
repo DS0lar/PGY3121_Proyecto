@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGREGAR PRODUCTO</title>
+
+    <!-- Link hoja de estilo -->
+    <link rel="stylesheet" href="css/style-agregar.css">
+    <!-- Link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Link iconos bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
+</head>
+<body>
+
+  <header >
+
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+      <div class="container">
+        <a href="#" >
+          <img src="img/inicio/log.png" >
+        </a>
+        <a href="#" class="navbar-brand">
+          <strong> LovPets</strong>
+        </a>
+        
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarHeader" aria-controls="navbarHeader"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"> </span>
+  
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarHeader">
+          <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+
+            <li class="nav-item">
+                <a href="inicio.html" class="nav-link  ">INICIO</a>
+            </li>
+           
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PRODUCTOS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item " href="carrito-comida.html">ALIMENTO</a></li>
+                <li><a class="dropdown-item" href="carrito-juguetes.html">JUGUETES</a></li>
+                <li><a class="dropdown-item" href="carrito-accesorios.html">ACCESORIOS</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="prod-agregar.html">AGREGAR/MODIFICAR</a></li>
+                
+  
+              </ul>
+            </li>
+  
+            
+  
+            
+  
+            <li class="nav-item">
+              <a href="nosotros.html" class="nav-link ">NOSOTROS</a>
+            </li>
+  
+            <a href="login.html" class="nav-link ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle " viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </a>
+
+           
+            <li>
+              <i class="bi bi-brightness-high-fill nav-item" id="toggleDark"></i>
+            </li>
+            
+
+            
+              
+            
+             
+  
+          </ul>
+  
+        
+        </div>
+      </div>
+    </div>
+      
+  </header>
+  
+
+      
+
+        <div class="container mt-3">
+        <h1>AGREGAR PRODUCTOS</h1>
+        
+      </div> 
+      <main>
+        <form action="" class="formulario" id="formulario" name="formulario">
+
+          <div class="row">
+
+              <!-- SKU -->
+            <div class="formularioGrupo col-md-6" id="grupoSku">
+
+              <label for="sku" class="formularioLabel">SKU</label>
+              <div class="formularioInp">
+                <input type="text" class="formularioInput" name="sku" id="sku" placeholder="Ingrese SKU">
+                <i class="formulario-validacionEstado bi bi-x-circle-fill"></i>
+                 
+                
+              </div>
+              <p class="formularioInput-error">Este campo es obligatorio, permite solo uso de mayusculas y digitos</p>
+
+            </div>
+
+            <!-- NOMBRE -->
+            <div class="formularioGrupo col-md-6 " id="grupoNombre">
+
+              <label for="nombre" class="formularioLabel">Nombre:</label>
+              <div class="formularioInp">
+                <input type="text" class="formularioInput" name="nombre" id="nombre" placeholder="Ingrese nombre">
+                <i class="formulario-validacionEstado bi bi-x-circle-fill"></i>
+              </div>
+              <p class="formularioInput-error">Este campo es obligatorio y no permite uso de simbolos</p>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- PRECIO -->
+            <div class="formularioGrupo col-md-6" id="grupoPrecio">
+
+              <label for="precio" class="formularioLabel">Precio:</label>
+              <div class="formularioInp">
+                <input type="text" class="formularioInput" name="precio" id="precio" placeholder="Ingrese precio">
+                <i class="formulario-validacionEstado bi bi-x-circle-fill"></i>
+              </div>
+              <p class="formularioInput-error">Este campo es obligatorio, Ingrese minimo 4 digitos</p>
+
+            </div>
+
+            <!-- CANTIDAD -->
+            <div class="formularioGrupo col-md-6" id="grupoCantidad">
+
+              <label for="cantidad" class="formularioLabel">Cantidad:</label>
+              <div class="formularioInp">
+                <input type="text" class="formularioInput" name="cantidad" id="cantidad" placeholder="Ingrese cantidad">
+                <i class="formulario-validacionEstado bi bi-x-circle-fill"></i>
+              </div>
+              <p class="formularioInput-error">Este campo es obligatorio, ingrese digitos</p>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <!-- TIPO -->
+            <div class="formularioGrupo col-md-6" id="grupoTipo">
+              <label for="tipo" class="formularioLabel">Tipo producto:</label>
+              <select class="form-select border border-black" aria-label="Default select example" name="tipo" id="tipo" required>
+                <option value="0"selected disabled>Seleccione...</option.value>
+                <option value="1">ALIMENTO</option>
+                <option value="2">JUGUETE</option>
+                <option value="3">ACCESORIO</option>
+              </select>
+              <p class="formularioInput-error">Este campo es obligatorio</p>
+            </div>
+
+            <!-- PROVEEDOR -->
+            <div class="formularioGrupo col-md-6" id="grupoProveedor">
+
+              <label for="proveedor" class="formularioLabel">Proveedor:</label>
+              <div class="formularioInp">
+                <input type="text" class="formularioInput" name="proveedor" id="proveedor" placeholder="Ingrese proveedor">
+                <i class="formulario-validacionEstado bi bi-x-circle-fill"></i>
+              </div>
+              <p class="formularioInput-error">Este campo es obligatorio</p>
+
+            </div>
+
+            
+          </div>
+          
+
+          <!-- DESCRIPCION -->
+          <div class="formularioGrupo col-md-12" id="grupoDescripcion">
+
+            <label for="descripcion" class="formularioLabel">Descripción:</label>
+            <div class="formularioInp">
+              <input type="text" class="formularioInput" name="descripcion" id="descripcion" placeholder=" ">
+              <i class="formulario-validacionEstado bi bi-x-circle-fill"></i>
+            </div>
+            <p class="formularioInput-error">No se admiten simbolos, maximo 200 caracteres </p>
+
+          </div>
+
+          <!-- URL -->
+          <div class="formularioGrupo col-md-12" id="grupoUrl">
+
+            <label for="url" class="formularioLabel">Imagen:</label>
+            <div class="formularioInp">
+              <input type="text" class="formularioInput" name="url" id="url" placeholder=" Ingrese URL de imagen.">
+              <i class="formulario-validacionEstado bi bi-x-circle-fill"></i>
+            </div>
+            <p class="formularioInput-error">Ingrese URL</p>
+
+          </div>
+
+
+          <div class="formularioMensaje" id="formularioMensaje">
+            <p class="m-0"><i class="bi bi-exclamation-diamond-fill"></i> <b>Error: </b> Rellene el formulario para continuar.</p>
+
+          </div>
+          <div class="row">
+            <div class="formularioGrupo formularioGrupo-btn-agregar col-md-6">
+              <button type="submit" class="formulario-btn s" id="agregar">VERIFICAR</button>
+             
+              
+            </div>
+            <div class="formularioGrupo formularioGrupo-btn-agregar col-md-6">
+              <button class="formulario-btn btn btn-primary " type="button" id="prueba">AGREGAR</button>
+              
+            </div>
+            <p class="formularioMensaje-exito" id="formularioMensaje-exito"> campos verificados</p>
+              
+          </div>
+
+         
+
+           
+        </form>
+      </main>
+
+
+
+<div class="container mt-3 mb-3">
+  <h3>Listado de productos</h3>
+</div>
+
+<div class="container">
+  <div class="col-12 mt-" id="tab">
+    <table class="table table-striped" id="lista">
+      <tr>
+          <td>SKU</td>
+          <td>NOMBRE</td>
+          <td>PRECIO</td>
+          <td>CANTIDAD</td>
+          <td>TIPO</td>
+          <td>PROVEEDOR</td>
+          <td>TOTAL</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="col-10 text-right" id="total"></div>
+</div>
+
+
+
+
+
+    
+<footer class="navbar navbar-fixed-bottom justify-content-end bg-dark text-white p-3">
+        @LovPets 2023
+</footer>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="js/agregar.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
